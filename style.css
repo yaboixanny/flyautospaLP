@@ -523,6 +523,18 @@ textarea {
     margin-top: 6px;
 }
 
+.showcase-book-btn {
+    justify-self: center;
+    width: auto;
+    min-width: 0;
+    padding: 14px 28px;
+    box-shadow: 0 18px 38px rgba(137, 12, 24, 0.24);
+}
+
+.showcase-book-btn:hover {
+    transform: translateY(-2px);
+}
+
 .placeholder-grid,
 .gallery-grid,
 .reviews-grid,
