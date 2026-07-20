@@ -291,23 +291,64 @@ iframe {
     margin-bottom: 22px;
 }
 
-.hero-location {
+.hero-review-strip {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    backdrop-filter: none;
     color: var(--white);
-    font-weight: 600;
+    flex-wrap: wrap;
 }
 
-.hero-location-icon {
-    width: 18px;
-    height: 18px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    flex-shrink: 0;
+.hero-review-brand,
+.hero-review-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.hero-review-google-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: -0.06em;
+    background: linear-gradient(90deg, #4285f4 0 38%, #ea4335 38% 58%, #fbbc05 58% 78%, #34a853 78% 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.hero-review-score {
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.hero-review-score strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.hero-review-stars {
+    color: #fbbc05;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    line-height: 1;
+}
+
+.hero-review-google-text {
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: -0.02em;
 }
 
 .status-card,
@@ -344,9 +385,9 @@ iframe {
 }
 
 .hero .quote-card {
-    background: rgba(255, 248, 238, 0.78);
-    border: 1px solid rgba(200, 155, 60, 0.24);
-    backdrop-filter: blur(16px);
+    background: rgba(255, 248, 238, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(14px);
     scroll-margin-top: 100px;
 }
 
@@ -373,11 +414,12 @@ textarea {
     width: 100%;
     padding: 14px 16px;
     border-radius: 16px;
-    border: 1px solid var(--mid-gray);
-    background: var(--white);
+    border: 1px solid rgba(200, 155, 60, 0.28);
+    background: rgba(255, 255, 255, 0.78);
     color: var(--text);
     font: inherit;
 }
+
 
 textarea {
     resize: vertical;
@@ -1024,10 +1066,11 @@ textarea {
         justify-content: center;
     }
 
-    .hero-location {
+    .hero-review-strip {
         justify-content: center;
         text-align: center;
         width: 100%;
+        gap: 12px;
     }
 
     .package-mobile-cta {
