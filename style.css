@@ -1026,7 +1026,7 @@ textarea {
 
     .hero {
         min-height: auto;
-        padding-top: 122px;
+        padding-top: 104px;
         padding-bottom: 88px;
     }
 
@@ -1054,8 +1054,17 @@ textarea {
         display: none;
     }
 
-    .hero-heading-mobile {
+    .hero-copy h1 .hero-heading-mobile {
         display: inline;
+        color: var(--white);
+    }
+
+    .hero-copy h1 .hero-heading-mobile .hero-heading-brand {
+        color: var(--gold);
+    }
+
+    .hero-booking-btn {
+        display: none;
     }
 
     .header-row {
