@@ -237,6 +237,10 @@ iframe {
     color: var(--gold);
 }
 
+.hero-heading-mobile {
+    display: none;
+}
+
 .hero-text,
 .section-copy,
 .section-heading p,
@@ -1040,6 +1044,18 @@ textarea {
 
     .hero-copy h1 {
         font-size: 2.6rem;
+    }
+
+    .hero-copy .eyebrow {
+        display: none;
+    }
+
+    .hero-heading-desktop {
+        display: none;
+    }
+
+    .hero-heading-mobile {
+        display: inline;
     }
 
     .header-row {
